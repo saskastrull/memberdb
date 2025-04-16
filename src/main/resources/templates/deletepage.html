@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>DELETE MEMBERS</title>
+    <style>
+        .green-table {
+            border-collapse: collapse;
+            border: 5px solid lightseagreen;
+            width: 100%;
+        }
+        .green-table th,
+        .green-table td {
+            border: 2px solid lightseagreen;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<h1>DELETE MEMBERS</h1>
+<table class="green-table">
+    <tr>
+        <th>ID</th>
+        <th>FIRST NAME</th>
+        <th>LAST NAME</th>
+        <th>EMAIL</th>
+        <th>PHONE</th>
+        <th>DoB</th>
+        <th>CITY</th>
+        <th>STREET</th>
+        <th>POSTAL CODE</th>
+        <th>ACTION</th>
+    </tr>
+    <tr th:each="member : ${members}">
+        <td th:text="${member.id}"></td>
+        <td th:text="${member.firstName}"></td>
+        <td th:text="${member.lastName}"></td>
+        <td th:text="${member.email}"></td>
+        <td th:text="${member.phone}"></td>
+        <td th:text="${member.dateOfBirth}"></td>
+        <td th:text="${member.getAddress().getCity()}"></td>
+        <td th:text="${member.getAddress().getStreet()}"></td>
+        <td th:text="${member.getAddress().getPostalCode()}"></td>
+        <td>
+            <a th:href="@{'/admin/deletememberbyid/' + ${member.id}}"> DELETE
+            </a>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
