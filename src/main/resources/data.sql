@@ -1,6 +1,6 @@
 /* Insert ADDRESSES */
-INSERT INTO address (city, street, postal_code) VALUES ('Söråker', 'Ängsvägen 42', '86152');
-INSERT INTO address (city, street, postal_code) VALUES ('Östersund', 'Stenhuggargränd 1', '83151');
+INSERT INTO address (city, street, postal_code) VALUES ('Åre', 'Ängsvägen 1', '81337');
+INSERT INTO address (city, street, postal_code) VALUES ('Borås', 'Pumpmakargränd 1', '81338');
 INSERT INTO address (city, street, postal_code) VALUES ('Sleepy Sound', 'Chug Street 1', '12345');
 INSERT INTO address (city, street, postal_code) VALUES ('Tilted Towers', 'Aimbot Road 3', '13370');
 INSERT INTO address (city, street, postal_code) VALUES ('The Joneses', 'Slurp Lane 2', '54321');

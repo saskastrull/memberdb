@@ -1,2 +1,2 @@
-# Spring Boot laboration
-Beginner stuff with Postman and Thymeleaf endpoints for school... :^)
+# Member Database
+School assignment based on Spring Boot, Thymeleaf and a H2 database.
